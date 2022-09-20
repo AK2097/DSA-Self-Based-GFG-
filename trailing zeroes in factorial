@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int trailingzeros(int n)
+{
+    int number = 0;
+    while(n>0)
+    {
+        number = number + n/5;
+        n = n/5;
+    }
+    return number;
+}
+int main()
+{
+    int n;
+    cout<<"enter a number" <<endl;
+    cin>>n;
+    cout<< trailingzeros(n);
+    return 0;
+}
+
+enter a number
+5
+1
