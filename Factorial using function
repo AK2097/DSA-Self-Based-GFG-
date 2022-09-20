@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int factorial(int n)
+{
+    int i=1,fact=1;
+    for(i=1;i<=n;i++)
+    {
+        fact = fact * i;
+    }
+    return fact;
+}
+int main()
+
+{
+    int n,i=1,fact=1;
+    cout<<"enter a number" <<endl;
+    cin>>n;
+    cout<<factorial(n);
+    return 0;
+    
+}
+
+enter a number
+5
+120
