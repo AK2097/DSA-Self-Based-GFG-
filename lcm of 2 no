@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,lcm=0;
+    cout<<"enter two numbers" <<endl;
+    cin>>a>>b;
+    lcm = (a>b)?a:b;
+    while(1)
+    {
+        if(lcm%a==0 && lcm%b==0)
+        cout<<lcm<<endl;
+        break;
+    }
+    lcm++;
+    return 0;
+}
